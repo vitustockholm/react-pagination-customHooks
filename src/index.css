@@ -6,7 +6,56 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.posts-list-group {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: large;
+  list-style: none;
+  color: rgb(70, 52, 52);
+}
+.posts-list-group:hover {
+  color: rgb(71, 69, 204);
+}
+.post {
+  margin: 0 auto;
+  padding: 3px;
+}
+.post:hover {
+  color: rgb(179, 23, 23);
+}
+.pagination {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3px;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 18px;
+  list-style: none;
+  color: rgb(70, 52, 52);
+}
+.page-link {
+  color: rgb(24, 21, 21);
+}
+.page-link:hover {
+  color: white;
+  background-color: rgb(47, 64, 197);
+  padding: 15px;
+  border-radius: 5%;
+}
+.text-primary {
+  color: rgb(73, 55, 55);
+}
+.text-primary:hover {
+  color: rgb(90, 35, 179);
+}
+h3 {
+  color: rgb(73, 55, 55);
+}
+h3:hover {
+  color: rgb(90, 35, 179);
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

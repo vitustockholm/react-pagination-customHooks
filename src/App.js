@@ -1,8 +1,27 @@
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+//
+import JsonPlaceHolder from './components/JsonPlaceHolder';
+import '../src/index.css';
+
 function App() {
   return (
-    <div className='App'>
-      <h5>101</h5>
-    </div>
+    <>
+      <Router>
+        <header>
+          <nav>
+            <li>
+              <Link to='/'>Matchematica</Link>
+            </li>
+          </nav>
+        </header>
+        <Switch>
+          <Route exact path='/' component={HomePage} />{' '}
+        </Switch>
+      </Router>
+      <div></div>
+      <JsonPlaceHolder />
+    </>
   );
 }
 

@@ -6,6 +6,10 @@
   height: 40vmin;
   pointer-events: none;
 }
+.list-group {
+  display: flex;
+  color: red;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
